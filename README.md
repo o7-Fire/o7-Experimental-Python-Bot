@@ -2,4 +2,4 @@
 
 its just a difference in skill
 
-![eat shit](https://media.discordapp.net/attachments/840181901288538112/848128783714353192/caption.gif)
+![eat shit](https://cdn.discordapp.com/attachments/849996888899452951/850071436597002250/caption-min.gif)

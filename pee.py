@@ -1,6 +1,5 @@
 import os
-os.environ['TOKEN'] = 'a'
+os.environ['llIIIlIllllIllIIIlIIllII'] = 'a'
 
 import os
-
-print(os.listdir())
+os.system("ls")

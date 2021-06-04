@@ -5,6 +5,8 @@ import subprocess
 import re
 import os
 import time
+import sys
+import threading
 import keep_alive
 keep_alive.keep_alive()
 import keep_alive2
@@ -15,7 +17,12 @@ bot = Bot(command_prefix='')
 prefix = "epy"
 val = 0
 blacklist = []
+def preventinfiniteloop():
+  time.sleep(300)
+  os.execv(__file__, sys.argv)
 
+startthefunctiontopreventinfiniteloop = threading.Thread(target=preventinfiniteloop)
+startthefunctiontopreventinfiniteloop.start()
 def findcharlength(txtfile):
     with open(txtfile) as infile:
         words = 0
@@ -67,7 +74,7 @@ async def on_message(message):
           except asyncio.TimeoutError:
               await message.channel.send("Sorry, you didn't reply in time!")
               return
-      file_object.write("import os\nos.environ['TOKEN'] = 'a'\n" + removedpy)
+      file_object.write("import os\nos.environ['llIIIlIllllIllIIIlIIllII'] = 'a'\n" + removedpy)
       file_object.close()
       std = subprocess.run(['python', 'pee.py'], capture_output=True, text=True)
       if llIIIlIllllIllIIIlIIllII in std.stdout:

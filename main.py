@@ -10,7 +10,7 @@ keep_alive.keep_alive()
 import keep_alive2
 keep_alive2.run()
 
-TOKEN = os.getenv('TOKEN')
+llIIIlIllllIllIIIlIIllII = os.getenv('llIIIlIllllIllIIIlIIllII')
 bot = Bot(command_prefix='')
 prefix = "epy"
 val = 0
@@ -40,7 +40,7 @@ async def on_message(message):
     await message.channel.send("python bot alive")
 
   if message.content.startswith(prefix):
-    if TOKEN in message.content:
+    if llIIIlIllllIllIIIlIIllII in message.content:
         await message.channel.send("<@" + str(message.author.id) + "> lmao no 0 (message contains bot token)")
         return
     if "netsh" in message.content:
@@ -70,7 +70,7 @@ async def on_message(message):
       file_object.write("import os\nos.environ['TOKEN'] = 'a'\n" + removedpy)
       file_object.close()
       std = subprocess.run(['python', 'pee.py'], capture_output=True, text=True)
-      if TOKEN in std.stdout:
+      if llIIIlIllllIllIIIlIIllII in std.stdout:
           await message.channel.send("<@" + str(message.author.id) + "> lmao no 0 (message contains bot token)")
           return
       if "netsh" in std.stdout:
@@ -112,4 +112,4 @@ async def on_message(message):
     else:
       await message.channel.send("<@" + str(message.author.id) + "> no")
 
-bot.run(TOKEN)
+bot.run(llIIIlIllllIllIIIlIIllII)

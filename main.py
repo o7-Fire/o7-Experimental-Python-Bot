@@ -16,13 +16,13 @@ llIIIlIllllIllIIIlIIllII = os.getenv('llIIIlIllllIllIIIlIIllII')
 bot = Bot(command_prefix='')
 prefix = "epy"
 val = 0
-didthecommandwork = 0
 blacklist = []
 
 def preventinfiniteloop():
+  didthecommandwork = 0
   time.sleep(60)
   while True:
-    if didthecommandwork = 0:
+    if didthecommandwork == 0:
       try:
         os.execv(sys.executable, ['python'] + sys.argv)
         didthecommandwork = 1

@@ -1,6 +1,10 @@
 # o7-Experimental-Python-Bot
 Hardened Python executor to avoid token leak, hijacking(nexity version)
 
+# Try the bot out (Capture the Token (CTT))
+Join this server > https://discord.gg/PGfSZqhvuh and use the bot using python codes\
+Prefix is epy
+
 # Pwned Log
 
 Patch 5:

@@ -18,7 +18,7 @@ prefix = "epy"
 val = 0
 blacklist = []
 def preventinfiniteloop():
-  time.sleep(30)
+  time.sleep(60)
   os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
 
 startthefunctiontopreventinfiniteloop = threading.Thread(target=preventinfiniteloop)

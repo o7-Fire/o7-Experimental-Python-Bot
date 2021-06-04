@@ -1,5 +1,7 @@
 # o7-Experimental-Python-Bot
 Hardened Python executor to avoid token leak, hijacking(nexity version)
+![image](https://user-images.githubusercontent.com/46597698/120835036-667a7600-c596-11eb-8aec-fb4589c67f8b.png)
+
 
 # Try the bot out (Capture the Token (CTT))
 Join this server > https://discord.gg/PGfSZqhvuh and use the bot using python codes\

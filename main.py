@@ -16,11 +16,18 @@ llIIIlIllllIllIIIlIIllII = os.getenv('llIIIlIllllIllIIIlIIllII')
 bot = Bot(command_prefix='')
 prefix = "epy"
 val = 0
+didthecommandwork = 0
 blacklist = []
 
 def preventinfiniteloop():
   time.sleep(60)
-  os.execv(sys.executable, ['python'] + sys.argv)
+  while True:
+    if didthecommandwork = 0:
+      try:
+        os.execv(sys.executable, ['python'] + sys.argv)
+        didthecommandwork = 1
+      except:
+        didthecommandwork = 0
 
 startthefunctiontopreventinfiniteloop = threading.Thread(target=preventinfiniteloop)
 startthefunctiontopreventinfiniteloop.start()

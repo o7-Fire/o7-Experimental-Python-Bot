@@ -22,6 +22,7 @@ def preventinfiniteloop():
   didthecommandwork = 0
   time.sleep(300)
   while True:
+    time.sleep(1)
     if didthecommandwork == 0:
       try:
         os.execv(sys.executable, ['python'] + sys.argv)

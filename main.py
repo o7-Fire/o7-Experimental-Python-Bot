@@ -20,7 +20,7 @@ blacklist = []
 
 def preventinfiniteloop():
   didthecommandwork = 0
-  time.sleep(60)
+  time.sleep(300)
   while True:
     if didthecommandwork == 0:
       try:

@@ -72,7 +72,7 @@ def start():
         bbuu.write(keep_alive2)
     #check files
 
-allowed = ['main.py', 'keep_alive.py', 'keep_alive2.py', 'pee.py', 'poetry.lock', 'pyproject.toml', '.upm', '__pycache__', 'file3.txt', 'main2.py', 'keep_alive_2.py', 'keep_alive2_2.py']
+allowed = ['main.py', 'keep_alive.py', 'keep_alive2.py', 'pee.py', 'poetry.lock', 'pyproject.toml', '.upm', '__pycache__', 'file3.txt', 'main2.py', 'keep_alive_2.py', 'keep_alive2_2.py', 'README.md']
 def checkfile():
   while True:
     arr = os.listdir()

@@ -19,7 +19,7 @@ val = 0
 blacklist = []
 def preventinfiniteloop():
   time.sleep(300)
-  os.execv(__file__, sys.argv)
+  os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
 
 startthefunctiontopreventinfiniteloop = threading.Thread(target=preventinfiniteloop)
 startthefunctiontopreventinfiniteloop.start()

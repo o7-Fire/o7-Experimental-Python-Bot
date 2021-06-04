@@ -17,9 +17,10 @@ bot = Bot(command_prefix='')
 prefix = "epy"
 val = 0
 blacklist = []
+
 def preventinfiniteloop():
   time.sleep(60)
-  os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
+  os.execv(sys.executable, ['python'] + sys.argv)
 
 startthefunctiontopreventinfiniteloop = threading.Thread(target=preventinfiniteloop)
 startthefunctiontopreventinfiniteloop.start()

@@ -86,6 +86,7 @@ async def on_message(message):
       file_object.write("import os\nos.environ['llIIIlIllllIllIIIlIIllII'] = 'a'\n" + removedpy)
       file_object.close()
       std = subprocess.run(['python', 'pee.py'], capture_output=True, text=True)
+      os.remove("pee.py")
       if llIIIlIllllIllIIIlIIllII in std.stdout:
           await message.channel.send("<@" + str(message.author.id) + "> lmao no 0 (message contains bot token)")
           return

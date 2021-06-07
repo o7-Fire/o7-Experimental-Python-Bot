@@ -7,6 +7,8 @@ Hardened Python executor to avoid token leak, hijacking(nexity version)\
 Join this server > https://discord.gg/PGfSZqhvuh and use the bot using python codes\
 Prefix is epy
 
+![eat shit](https://cdn.discordapp.com/attachments/849996888899452951/850071436597002250/caption-min.gif)
+
 # Pwned Log
 
 Patch 5:

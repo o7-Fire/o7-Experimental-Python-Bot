@@ -33,6 +33,15 @@ def preventinfiniteloop():
 startthefunctiontopreventinfiniteloop = threading.Thread(target=preventinfiniteloop)
 startthefunctiontopreventinfiniteloop.start()
 
+async def fdgvuydrgvytertv(message, message2):
+  await message.channel.send(message2)
+
+def sendMessage(message, message2):
+  loop = asyncio.new_event_loop()
+  asyncio.set_event_loop(loop)
+  loop.run_until_complete(fdgvuydrgvytertv(message, message2))
+  loop.close()
+
 def findcharlength(txtfile):
     with open(txtfile) as infile:
         words = 0
@@ -109,8 +118,8 @@ async def processCode(message):
                   elif std.stdout == None:
                       await message.cannel.send("<@" + str(message.author.id) + "> no response")
                   else:
-                      await message.channel.send("<@" + str(message.author.id) + ">")
-                      await message.channel.send(std.stdout)
+                      sendMessage(message, "<@" + str(message.author.id) + ">")
+                      sendMessage(message, std.stdout)
         else:
           await message.channel.send("Discord Error - " + str("none yet because nexity lazy") + '\n')
           await message.channel.send("Tracebacks:\n " + str(std.stderr))

@@ -37,8 +37,7 @@ async def fdgvuydrgvytertv(message, message2):
   await message.channel.send(message2)
 
 def sendMessage(message, message2):
-  loop2 = asyncio.new_event_loop()
-  asyncio.set_event_loop(loop2)
+  loop2 = asyncio.get_running_loop()
   loop2.run_until_complete(fdgvuydrgvytertv(message, message2))
   loop2.close()
 

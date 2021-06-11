@@ -11,8 +11,8 @@ import threading
 from discord.ext import tasks
 import keep_alive
 keep_alive.keep_alive()
-#import keep_alive2
-#keep_alive2.run()
+import keep_alive2
+keep_alive2.run()
 
 message2 = ""
 activeornot1 = False

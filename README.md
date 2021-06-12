@@ -4,7 +4,7 @@ Hardened Python executor to avoid token leak, hijacking(nexity version)\
 
 
 # Try the bot out (Capture the Token (CTT))
-Join this server > https://discord.gg/PGfSZqhvuh and use the bot using python codes\
+Join this server > https://discord.gg/pcas and use the bot using python codes\
 Prefix is epy
 
 ![eat shit](https://cdn.discordapp.com/attachments/849996888899452951/850071436597002250/caption-min.gif)

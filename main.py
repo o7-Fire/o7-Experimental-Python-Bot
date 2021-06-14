@@ -180,7 +180,7 @@ async def processCode2():
         except asyncio.TimeoutError:
             await message2.channel.send("Sorry, you didn't reply in time!")
             return
-    file_object.write("import os\nos.environ['llIIIlIllllIllIIIlIIllII'] = 'a'\n" + removedpy)
+    file_object.write( removedpy)
     file_object.close()
     std = subprocess.run(['python', 'pee.py'], capture_output=True, text=True)
     os.remove("pee.py")
